@@ -1,5 +1,12 @@
 const Home = () => {
-  return <div className="text-white dark:text-red-500">Home</div>;
+  return (
+    <div>
+      <p className="text-fore-0">Home</p>
+      <p className="text-fore-1">Home</p>
+      <p className="text-fore-2">Home</p>
+      <p>Home</p>
+    </div>
+  );
 };
 
 export default Home;

@@ -6,11 +6,9 @@ import logo from '@imgs/logo.png';
 
 const Layout = () => {
   return (
-    <div>
+    <div className="w-screen min-h-screen bg-back-4">
       <DarkModeSwitch />
-
-      <img src={logo} />
-      <main className="w-screen h-screen bg-primary-200">
+      <main className="w-screen">
         <Outlet />
       </main>
     </div>
