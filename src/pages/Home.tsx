@@ -1,3 +1,5 @@
+import { Calendar } from '@/components';
+
 const Home = () => {
   return (
     <div>
@@ -5,6 +7,8 @@ const Home = () => {
       <p className="text-fore-1">Home</p>
       <p className="text-fore-2">Home</p>
       <p>Home</p>
+
+      <Calendar />
     </div>
   );
 };
