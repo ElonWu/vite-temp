@@ -6,15 +6,16 @@ import { IconMoon, IconSun } from '@douyinfe/semi-icons';
 import { Button } from '@douyinfe/semi-ui';
 
 const DarkModeSwitch = memo(() => {
-  const { isDark, toggleDarkMode } = useDarkMode();
+  const { isDarkMode, toggleDarkMode } = useDarkMode();
 
   return (
     <Button
       type="primary"
+      theme="solid"
       circle
       size="large"
       onClick={toggleDarkMode}
-      icon={!isDark ? <IconSun /> : <IconMoon />}
+      icon={isDarkMode ? <IconMoon /> : <IconSun />}
     />
   );
 });
